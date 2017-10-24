@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>考试系统</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="app">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <h2>欢迎使用测评系统</h2>
+            <div class="form-horizontal" id="login">
+                <div class="form-group">
+                    <label for="username" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="username" placeholder="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-4">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button id="sign-in" class="btn btn-default">登录</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="start">
+                <h4 id="welcome"></h4>
+                <button id="sign-out" class="btn btn-danger" onclick="signOut()">退出账号</button>
+                <div id="render">
+
+                </div>
+                <button type="button" class="btn btn-success" id="submit" onclick="submit()">确定</button>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <h4>内置账号：</h4>
+            <label class="col-sm-12 control-label">user1: 111111</label>
+            <label class="col-sm-12 control-label">user2: 111111</label>
+            <label class="col-sm-12 control-label">user3: 111111</label>
+        </div>
+    </div>
+</body>
+<script src="start.js"></script>
+</html>
